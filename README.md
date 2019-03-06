@@ -9,5 +9,5 @@ This example illustrates why it's important to think about how to handle the pro
 2. Execute `sls deploy -v`
 3. Execute `sls invoke -f createErrors`
 4. View the CloudWatch log for the subscriber lambda
-  - Notice that even though the second event in the batch is causing the error, upon each retry, the first event is still be re-processed
+    - Notice that even though the second event in the batch is causing the error, upon each retry, the first event is still be re-processed
 5. View the DynamoDB table and verify that only a single entry has been inserteda 
